@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Arbitrary Trading</title>
+  <!-- plugins:css -->
+  <link rel="stylesheet" href="../../../static/vendors/iconfonts/mdi/css/materialdesignicons.min.css">
+  <link rel="stylesheet" href="../../../static/vendors/css/vendor.bundle.base.css">
+  <link rel="stylesheet" href="../../../static/vendors/css/vendor.bundle.addons.css">
+  <!-- endinject -->
+  <!-- plugin css for this page -->
+  <!-- End plugin css for this page -->
+  <!-- inject:css -->
+  <link rel="stylesheet" href="../../../static/css/style.css">
+  <!-- endinject -->
+  <link rel="shortcut icon" href="../../../static/images/favicon.png" />
+
+ 
+</head>
+
+<body onload="getJson()">
+  <div class="container-scroller">
+    <nav class="navbar default-layout col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+      <div class="text-center navbar-brand-wrapper d-flex align-items-top justify-content-center">        
+    
+	  </div>    
+  
+    </nav>
+    <!-- partial -->
+    <div class="container-fluid page-body-wrapper">
+      <!-- partial:../../partials/_sidebar.html -->
+      <nav class="sidebar sidebar-offcanvas" id="sidebar">
+        <ul class="nav">          
+          <li class="nav-item">
+            <a class="nav-link" href="../../pages/charts/CustomUIjs.html">
+              <i class="menu-icon mdi mdi-television"></i>
+			  <
+              <span class="menu-title">Custom UI</span>
+            </a>
+          </li>        
+        </ul>
+      </nav>
+      <!-- partial -->
+      <div class="main-panel">
+        <div class="content-wrapper">
+          <div class="row">
+            
+			
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Current Position</h4>
+                  <p class="card-description">
+                   
+                  </p>
+                  <div class="table-responsive">
+                    <table class="table table-hover">
+                      <thead>
+                        <tr>
+                          <th>Currency</th>
+                          <th>Quantity</th>
+                          
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td>BTC</td>
+                          <td id="BTC">10</td>
+                         
+                          
+                          </td>
+                          
+                        </tr>
+                        <tr>
+                          <td>LTC</td>
+                          <td id="LTC">10</td>
+                         
+                           
+                          </td>
+                        
+                        </tr>
+                        <tr>
+                          <td>ETH</td>
+                          <td id="ETH">10</td>
+                         
+                          </td>
+                         
+                        </tr>
+                        <tr>
+                          <td>REQ</td>
+                          <td id="REQ">10</td>
+                         
+                           
+                          </td>
+                         
+                        </tr>
+                        <tr>
+                          <td>NEO</td>
+                          <td id="NEO">10</td>
+                       
+                          </td>
+                         
+                        </tr>
+						   <tr>
+                          <td>USD</td>
+                          <td id="USD">10</td>
+                       
+                          </td>
+                         
+                        </tr>
+						   <tr>
+                          <td>EUR</td>
+                          <td id="EUR">10</td>
+                       
+                          </td>
+						     <tr>
+                          <td>SGD</td>
+                          <td id="SGD">10</td>
+                       
+                          </td>
+                         
+                        </tr>
+                            <tr>
+                          <td>GBP</td>
+                          <td id="GBP">10</td>
+                       
+                          </td>
+                         
+                        </tr>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+			
+			
+			<div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Arbitrary opportunities</h4>
+                  <div id="PortfolioTable" class="table-responsive">                    
+                  </div>
+				  <button onclick="update()">Click me</button>
+                </div>
+              </div>
+            </div>
+			
+			
+            <div class="col-lg-6 grid-margin stretch-card">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Pie chart</h4>
+                  <canvas id="pieChart" style="height:250px"></canvas>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+        <!-- partial:../../partials/_footer.html -->
+        <footer class="footer">
+          <div class="container-fluid clearfix">
+            <span class="text-muted d-block text-center text-sm-left d-sm-inline-block">Copyright © 2018
+              <a href="http://www.bootstrapdash.com/" target="_blank">Bootstrapdash</a>. All rights reserved.</span>
+            <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">Hand-crafted & made with
+              <i class="mdi mdi-heart text-danger"></i>
+            </span>
+          </div>
+        </footer>
+        <!-- partial -->
+      </div>
+        <!-- partial -->
+      </div>
+      <!-- main-panel ends -->
+    </div>
+    <!-- page-body-wrapper ends -->
+  </div>
+  <!-- container-scroller -->
+  <!-- plugins:js -->
+  <script src="../../../static/vendors/js/vendor.bundle.base.js"></script>
+  <script src="../../../static/vendors/js/vendor.bundle.addons.js"></script>
+  <!-- endinject -->
+  <!-- Plugin js for this page-->
+  <!-- End plugin js for this page-->
+  <!-- inject:js -->
+  <script src="../../../static/js/off-canvas.js"></script>
+  <script src="../../../static/js/misc.js"></script>
+  <!-- endinject -->
+  <!-- Custom js for this page-->
+  <script src="../../../static/js/CustomUI.js"></script>
+ <script src="../../../static/js/TableData.js"></script>
+  <!-- End custom js for this page-->
+</body>
+
+</html>
